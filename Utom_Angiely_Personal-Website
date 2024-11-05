@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Websie</title>
+<style>
+.header{
+   background-color:#6AB187;   
+   width:1200px;
+   height:80px;
+   align-content:center;
+   text-align:right; 
+}
+.hp{
+   display:flex;
+   justify-content:center;
+}
+.logo{
+   float:left;
+   height:50px;
+   margin-right:500px;
+   
+}
+a:link{  
+  text-decoration:none;  
+  margin-right:20px;
+  font-size:20px;
+  color:black;
+  text-align:center;
+  align-content:center;
+  font-family: "Times New Roman", Times, serif;
+}
+a:hover,a#active{
+   color:#F5F5EB;
+}
+.menu{
+  height:50px;
+  float: right;
+  margin-left:40px;
+}
+/*Container one*/
+.container-one{
+   background-color:#EFE7DA;
+   width:1200px;
+   height:700px;  
+   display:flex;
+   justify-content:center;
+   place-items:center;
+}
+.hi{
+   font-size:25px;
+}
+.name{
+   font-size:30px;
+   font-weight:bold;
+}
+.mypic{
+   float:right;
+   height:400px;
+   width:400px;
+   border-radius:50%;
+   margin-left:20px;
+}
+.button{
+   background-color:green;
+   height:42px;
+   width:150px;
+   display:flex;
+   justify-content:center;
+   place-items:center;
+   font-size:18px;
+   color:white;
+   opacity:0.7;
+}
+button:active{
+   background-color:red;
+   opacity:0.5;
+   cursor:pointer;
+}
+.web{
+   font-size:50px;
+   font-weight;bold;
+   text-shadow:10px 5px 10px red;
+}
+.detail{
+   font-size:18px;
+}
+.icon{
+   height:30px;
+   width:30px;
+   margin-top:20px;
+}
+.m-left{
+   margin-left:50px;
+}
+/*Container-two*/
+.container-two{
+   display:flex;
+   background-image: url('https://assets.onecompiler.app/42vxpcykz/42wjnn3ej/IMG_20240915_063906_918.jpg');
+   background-repeat: no-repeat;
+   width:1200px;
+   height:800px; 
+   background-size:100% 100%;  
+}
+.my-detail{
+   text-align:justify;
+   background-color:#D3D0C9;
+   opacity:0.9;
+   width:200px;
+   font-size:25px;
+   padding:20px;
+}
+.moto{
+   font-size:50px;
+   text-align:center;
+   justify-content:center;
+   margin-top:80px;
+   margin-left:40px;
+   font-weight:bold;
+}
+.to-style{
+   font-weight:bold;
+   font-size:40px;
+}
+.h-i{
+   width:1200px;
+   height:800px; 
+   background-color:#fbede0;
+}
+.fourset{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+.t-dance,.drawing,.swimming,.baking{
+   margin-top:50px;
+}
+.arts{
+   width:250px;
+   height:500px;
+   border-radius:20px;
+   margin-right:30px;
+}
+.like{
+   background-color:#EBCFC4;
+   height:100px;
+   width:1200px;
+   text-align:center;
+   align-content: center;
+   font-size:50px;
+   margin-top:0px;
+   font-weight:bold;
+   letter-spacing:10px;
+}
+.set-name{
+   font-size:30px;
+   font-weight:bold;
+}
+.travel{  
+   font-size:50px;
+   font-weight:bold;
+   letter-spacing:10px;
+}
+.tp{
+   display:flex;
+   justify-content:center; 
+   border-bottom:1px solid gray;
+   align-content:center;
+   align-items:center;
+}
+.tp-background{
+   background-color:#fbede0;
+   width:1200px;
+   height:800px;  
+}
+#in{
+   background-color:#B3907A;
+   width:200px;
+   height:50px;
+   align-content:center;
+   text-align:center;
+   border-radius:0 50px 50px 0;
+}
+#date{
+   font-size:15px;
+   display:flex;
+}
+#in-visit{
+   line-height:20px; 
+   text-decoration:none;
+   margin-right:50px;
+}
+#visit{
+   font-weight:bold;
+   font-size:20px;
+}
+#visit:hover{
+   color:red;
+   cursor:pointer;
+}
+.photograph{
+   height:200px;
+   width:170px;
+}
+.photo{
+   margin-right:5px;
+   height:300px;
+   width:150px;
+   margin-right:30px;
+   }
+.package{
+   display:flex;
+   align-items:center;
+}
+/*Container three for education.*/
+.educ,.school{
+   background-image: url('https://assets.onecompiler.app/42vxpcykz/42wkrpqmt/IMG_20240116_105836_374.jpg');
+   background-repeat: no-repeat;
+   background-size:100% 100%;
+   width:1200px;
+   height:800px; 
+   display:flex;   
+}
+.school-name{
+   background-color:green;
+   font-size:30px;
+   justify-content:center;
+   text-align:center;
+   align-content:center;
+   height:200px;
+   width:600px;
+   border-radius:10px;
+   margin-top:150px
+}
+#to-bold{
+   font-weight:bold;
+}
+.major{
+   display:flex;
+   background-image: url('https://assets.onecompiler.app/42vxpcykz/42w3du6ve/received_277659211308750_1.jpeg');
+   background-repeat: no-repeat;
+   width:1200px;
+   height:800px; 
+   background-size:100% 100%;
+}
+.educ-label{
+   letter-spacing:10px;
+   text-align:center;
+   font-weight:bold;
+   margin-top:20px;
+}
+#it,.educ-label{
+   background-color: yellow;
+   height:50px;
+   width:300px;
+   align-content: center;
+   border-left:30px solid green;
+   font-size:30px;
+   color:red;
+}
+/*Container four. Skills*/
+.container-four{
+   height:800px;
+   width:1200px;
+   background-color:#EFE7DA;
+   font-size:50px;
+   justify-content: center;
+}
+.skill-c{  
+   display:flex;
+   justify-content:center; 
+   padding-top:70px;
+   font-weight:bold;
+   text-decoration:underline;
+}
+.end-back-set{
+   display:flex;
+   justify-content:center;
+   text-align:center; 
+   padding-top:100px;
+}
+.front-end,.back-end{
+   height:400px;
+   width:400px;
+   background-color:white;     
+}
+.back-end{
+   margin-left:100px;
+}
+.f-end,.b-end{
+   height:100px;
+   width:100px;
+   padding-top:20px;
+}
+/*Container five. Project.*/
+.container-five{
+   height:800px;
+   width:1200px;
+   background-color:#E4DAC2;
+   align-items:center;
+}
+.project{
+   padding-top:10px;
+   padding-left:10px;
+   font-weight:bold;
+   text-decoration:underline;
+   font-size:30px;
+}
+.pro-list{
+   font-size:30px;
+   list-style-type:none;
+   margin-right:30px;
+}
+.pro{
+   height:500px;
+   width:330px;
+   margin-left:20px;
+   padding-left:20px;
+   margin-bottom:100px;
+   border-radius:10px;
+}
+.pro-align{
+   display:flex;  
+}
+/*Container six for Contact or sending message.*/
+.container-six{
+   height:1080px;
+   width:1200px;
+   background-color:#EFE7DA;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+.c-background{
+   height:1000px;
+   width:800px;
+   background-color:#C1B6A3;
+   border-radius:50px;
+}
+.con-tact{
+   text-align:center;
+   font-size:80px;
+   font-weight:bold;
+   letter-spacing:10px;
+   border-bottom:1px solid gray;
+}
+.form{
+   padding-left:150px;  
+   padding-top:50px;
+}
+.resize{
+   height:50px;
+   width:500px;
+}
+.sub{
+   height:50px;
+   width:100px;
+   margin-top:20px;
+}
+.msg{
+   font-size:30px;
+   color:gray;
+}
+.label{
+   font-size:20px;
+}
+/*Footer style below*/
+.footer{
+   background-color:#304146;
+   height:300px;
+   width:1200px;
+   color:white;
+   font-size:30px;
+   align-content:center;
+}
+.apart{
+   width:400px;
+   height:200px;
+   font-size:20px;
+   margin-left:50px;
+}
+.set{
+   display:flex;
+   justify-content:center;
+   color:white;
+}
+.resource:link,#follow{
+   color:white;
+   text-decoration:underline;
+   font-size:20px;
+}
+#info{
+   height:20px;
+   width:20px;
+}
+.rights{
+   display:flex;
+   justify-content:center;
+   border-top:1px solid gray;
+   font-size:20px;
+   padding-top:20px;
+   color:#F5F5EB;
+}
+</style>
+</head>
+<body>
+<header class = "header"><!--A set of header element-->
+<div class = "hp">
+<img class = "logo" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/15454098.png">
+<a id = "active" href = "#">Home</a>
+<a href = "#">About</a>
+<a href = "#">Education</a>
+<a href = "#">Skills</a>
+<a href = "#">Project</a>
+<a href = "#">Contact</a>
+<img class = "menu" src  = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/1828859.png">
+</a>
+</div>
+</header>
+<!--Container One. Intro-->
+<div class = "container-one">
+<div>
+<p class = "hi">Hi, I'm 
+<span class = "name">Angiely</span>.</br>
+<span class = "web">Web Developer</span></p>
+<p class = "detail">A Web Developer from Philippines. I created website for business<br> that meet the specific needs of my client. I am dedicated to work<br> remotely, as it offers flexibility and convenience in today's world.
+</p>
+<!--Social media icon-->
+<button class = "button">Let's Connect</button>
+<a href = "https://www.linkedin.com/in/angiely-utom-7594a3281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+<img class = "icon" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/3536505.png">
+</a>
+<a href = "https://github.com/AngielyUtom">
+<img class = "icon" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/3291695.png"></a>
+<a href = "https://www.facebook.com/profile.php?id=61550427980003&mibextid=ZbWKwL">
+<img class = "icon" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/733547.png"></a>
+<a href = "https://www.instagram.com/angielyutom/profilecard/?igsh=MTZhMmxnZmJ1Z3B5aw==">
+<img class = "icon" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/2111463.png"></a>
+</div>
+<div class = "m-left"><img class = "mypic" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/Picsart_24-10-15_16-30-37-604.jpg">
+</div>
+</div>
+<!--Container two. About me-->
+<div class = "container-two">
+<div class = "my-detail">
+<p><span class = "to-style">About me:</span><br>
+I'm a second-year IT student pursuing a bachelor degree major in web development. My goal is to create innovative websites across multiple platforms, empowering businesses for sustainable online services.</p>
+</div>
+<div class = "moto"><p class = "motto"><q>If you can change your mind, you can change your life.</q><br><br>-WILLIAM JAMES</p>
+</div>
+</div>
+</div>
+<div class = "h-i">
+<p class = "like">Hobbies/Interest</p>
+<div class = "fourset">
+<div class = "drawing">
+<p class = "set-name">Pencil Drawing</p>
+<img class = "arts" src = "https://assets.onecompiler.app/42vxpcykz/42wkq48yk/img_1730250518810.jpg">
+</div>
+<div class = "t-dance">
+<p class = "set-name">TikTok Dance</p>
+<img class = "arts" src = "https://assets.onecompiler.app/42vxpcykz/42x5xmq5f/Screenshot_20241105-022051.jpg">
+</div>
+<div class = "swimming">
+<p class = "set-name">Swimming</p>
+<img class = "arts" src = "https://assets.onecompiler.app/42vxpcykz/42x5wmgns/received_1088222942089305.jpeg">
+</div>
+<div class = "baking">
+<p class = "set-name">Homemade Baking</p>
+<img class = "arts" src = "https://assets.onecompiler.app/42vxpcykz/42wkq48yk/img_1730250761760.jpg">
+</div>
+</div>
+</div>
+<!--Travel Journey-->
+<div class = "tp-background">
+<div class = "tp">
+<h1 class = "travel">Travel Photography</h1>
+</div>
+<h1 id = "in">Check-in</h1>
+<div class = "package">
+<div class = "photos">
+<ul id = "in-visit">
+<li><a id = "visit"href = "https://www.facebook.com/AgusGardenPoolandResort?mibextid=rS40aB7S9Ucbxw6v">Agus Garden Resort</a><span id = "date">Jan.11,2021</span></li>
+<li><a id = "visit"href = "https://www.facebook.com/Mt.MagdiwataEcoFarmAndResort?mibextid=ty43ZLwQUWkVmZJS">Mt. Magdiwata Eco Farm & Resort</a><span id = "date">2021</span></li>
+<li><a id = "visit" href = "https://www.facebook.com/libuacancoldspring?mibextid=ty43ZLwQUWkVmZJS">Libuacan Cold Spring</a><span id = "date">2021</span></li>
+<li><a id = "visit" href = "https://maps.app.goo.gl/aaRoWuPA9mQmBrQj6">Lawis Beach Resort,Lianga<a/><span id = "date">Jan.14,2022</span></li>
+<li><a id = "visit" href = "Phoenix Heights Condominium https://g.co/kgs/8XQT1m5">Phoenix Heights Condominium</a><span id = "date">Aug.4,2022</span></li>
+<li><a id = "visit" href = "https://www.facebook.com/profile.php?id=100064753084409&mibextid=ty43ZLwQUWkVmZJS">Ace Water Spa,Pasig City</a><span id = "date">Dec.24,2022</span></li>
+<li><a id = "visit" href = "https://www.facebook.com/profile.php?id=100069830988215&mibextid=ty43ZLwQUWkVmZJS">Areola's Farmhouse Resort</a><span id = "date">Jul.5,2024</span></li>
+<li><a id = "visit" href = "https://www.facebook.com/GramercyResidences?mibextid=ty43ZLwQUWkVmZJS">The Gramercy Residence</a><span id = "date">Sep.14,2024</span></li>
+</ul>
+</div>
+<div class = "photo">
+<p>Province of Agusan Del Sur,Mindanao.</p>
+<img class = "photograph"src = "https://assets.onecompiler.app/42vxpcykz/42w343u48/Screenshot_20241024-204618_2.jpg">
+</div>
+<div class = "photo">
+<p>Cebu Cordova link Expressway(CCLEX).</p>
+<img class = "photograph"src = "https://assets.onecompiler.app/42vxpcykz/42w343u48/received_433710122130995.jpeg">
+</div>
+<div class = "photo">
+</p>Manila Baywalk Dolomite Beach.</p>
+<img class = "photograph"src = "https://assets.onecompiler.app/42vxpcykz/42w343u48/FB_IMG_1729774757225.jpg">
+</div>
+<div class = "photo">
+<p><br>Malico ViewPoint.</p>
+<img class = "photograph"src = "https://assets.onecompiler.app/42vxpcykz/42w343u48/IMG_20240914_095001_703.jpg">
+</div>
+</div>
+<!--Container three-->
+<div class = "educ">
+<div class = "educ-label">Education:</div>
+<p class = "school-name"><span id = "to-bold">NUEVA VIZCAYA STATE UNIVERSITY</span>
+<br>
+<q>A leading university in education, innovation, and sustainable development</q></p>
+</div
+<!--Info.Tech-->
+<div class = "major">
+<h1 id = "it">Information Technology<h1>
+</div>
+<!--Container four-->
+<div class = "container-four">
+<div class = "skill-c"
+<h1 class = "skills">SKILLS</h1>
+</div>
+<div class = "end-back-set">
+<div class = "front-end">
+<div class = "f-e"><p class = "center">Front-End</p></div>
+<img class = "f-end" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/5968242.png">
+<img class = "f-end" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/5968267.png">
+<img class = "f-end" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/1199124.png">
+</div>
+<div class = "back-end">
+<div class = "b-e"><p class = "center">Back-End</p></div>
+<img class = "b-end" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/6132221.png">
+<img class = "b-end" src = "https://assets.onecompiler.app/42vxpcykz/42vxr5vg5/1199128.png">
+</div>
+</div>
+</div>
+<!--Container five-->
+<div class = "container-five">
+<div class = "project"><h1>Project</h1></div>
+<div class = "pro-align">
+<ul class = "pro-list">
+<li>Mini Calculator</li>
+<li>Student Management System</li>
+<li>Bank System</li>
+<li>Fb clone</li>
+</ul>
+<img class = "pro" src = "https://assets.onecompiler.app/42vxpcykz/42w6f7u4f/Screenshot_20241025-234800.jpg">
+<img class = "pro" src = "https://assets.onecompiler.app/42vxpcykz/42w6f7u4f/Screenshot_20241025-235707.jpg">
+
+</div>
+
+</div>
+<!--Container six. A set of contact element like a form.-->
+<div class = "container-six">
+<div class = "c-background">
+<h1 class = "con-tact">Contact</h1>
+<div class = "form">
+<p class = "msg">Send message</p>
+<p class = "label">Enter your full name:</p>
+<input class = "resize"type="text" placeholder = "Full name"></input>
+<p class = "label">Enter your phone number:</p>
+<input class = "resize" type="text" placeholder = "Phone number"></input>
+<p class = "label">Enter your email:</p>
+<input class = "resize" type="email" placeholder = "Email"></input>
+<br>
+<input class = "sub" type="submit" placeholder = "Send message"></input>
+</div>
+</div>
+</div>
+<!--A set of footer element including relevant resources and contact information.-->
+<footer class = "footer">
+<div class = "set">
+<div class = "apart">
+<p>LANGUAGE</p>
+<p>Filipino<br>English</p> 
+</div>
+<div class = "apart">
+<p>Online RESOURCES</p>
+<a class = "resource" href = "https://www.w3schools.com/">w3schools</a><br>
+<a class = "resource" href = "https://stackoverflow.com/">St
+ack Overflow</a><br>
+<a class = "resource" href = "https://fontawesome.com/">Font Awesome</a><br>
+<a class = "resource" href = "https://www.flaticon.com/">Flaticon</a><br>
+<a class = "resource" href = "https://youtu.be/G3e-cpL7ofc?si=SHDoxJ1EmcLxaAzt">HTML&CSS</a>
+</div>
+<div class = "apart">
+<p>CONTACT ME</p>
+<p><img id = "info" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/14831599.png ">Nueva Vizcaya, Philippines 3702</p>
+<p><img id = "info" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/732200.png">angielyutom@gmail.com</p>
+<p><img id = "info" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/9946341.png">+63 906 4605 300</p>
+</div>
+<div class = "apart">
+<h3>Others</h3>
+<p><img id = "info" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/1384060.png"><a id = "follow" href = "https://www.youtube.com/@angielyutom0113">Subscribe Now</p></a>
+<p><img id = "info" src = "https://assets.onecompiler.app/42vxpcykz/42vxpe5s3/3643914.png"><a id = "follow" href = "https://vt.tiktok.com/ZSjd7ohKK/">Online Shop</a></p>
+</div>
+</div>
+<!--This website is designed by Angiely-->
+<p class = "rights">Copyright &copy; 2024 Personal Website. All rights Reserved.</p>
+</footer>
+</body>
+</html>
